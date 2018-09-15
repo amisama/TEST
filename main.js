@@ -1967,9 +1967,79 @@ this._sendMessage(seq,"Mohon Maaf Anda Bukan Admin >_<");
 
       }
 
-        if(txt == 'tab:help') {
-           this._sendMessage(seq, '==============================\nтαв αℓℓ ¢σммαи∂\n==============================\n☞ Myid\n☞ Tab:Gift\n☞ Halo\n☞ TAB:Help\n☞ Tab:CreatorBot\n☞ TAB:InfoGroup\n☞ Tab:GroupCreator\n☞ Tab:Tag\n☞ Tab:Speed\n☞ Baca Read\n☞ Lihat Pembacaan Read\n☞ Tab:Setting\n☞ Hapus Pembacaan Read\n☞ Tab:Banlist\n☞ Tab:CekID\n☞ Tab:AdminList\n☞ Tab:StaffList\n☞ Tab:BlackList\n☞ Tab:TbanList\n☞ Tab:GroupList\n☞ Hak Admin Dan Staff\n☞ Apakah [Text] (Fitur Kerang Ajaib)\n\n==============================\nтαв ѕтαff ¢σммαи∂\n==============================\n☞ Response Name\n☞ Tab:Cancel\n☞ Tab:OpenUrl\n☞ Tab:CloseUrl\n☞ Tab:Bye\n☞ Tab:spam\n☞ Auto Respon On/Off\n☞ Protect On/Off\n☞ Kick On/Off\n☞ Cancel On/Off\n☞ LockInvite On/Off\n☞ LockUpdateGroup On/Off\n☞ LockOpenQr On/Off\n☞ LockJoin On/Off\n☞ LockCancel On/Off\n☞ Tab:Kick「@」\n☞ Auto Read On/Off\n☞ Tab:Kickall\n☞ Tab:Msg\n☞ Tab:Ban\n☞ Tab:Unban\n☞ Tab:Tban\n☞ Tab:Untban\n☞ Ban All Users\n☞ Clear All Banlist\n☞ Bmsg On/Off\n☞ Tab:Change:NameGroup [Text]\n\n==============================\nтαв α∂мιи ¢σммαи∂\n==============================\n☞ Join [LinkGroup]\n☞ Tab:BackupGroup\n☞ Tab:AddAllMem\n☞ Tab:add:staff\n☞ Tab:del:staff\n☞ Tab:BroadcastGroup [Text]\n☞ Tab:AddContact\n☞ Tab:Change:Bio [Text]\n☞ Tab:Change:Nick [Text]\n☞ Tab:CreateGroup [Jumlah]-[Nama]/[Mid]\n\n==============================฿Ɏ ₮Ɇ₳₥ ₳₦Ʉ ฿Ø₮\n==============================');
-        }
+        if(txt == 'helpmie') {
+           this._sendMessage([
+                // {
+                //     type: 'image',
+                //     originalContentUrl: url,
+                //     previewImageUrl: url
+                // },
+                {
+                       "type": "template",
+                       "altText": "AmiBot mengirim stiker.",
+                       "template": {
+                           "type": "image_carousel",
+                           "columns": [
+                               {
+                                   "imageUrl": "https://data.whicdn.com/images/137927076/original.gif",
+                                   "size": "full",
+                                   "aspectRatio": "2:1",
+                                   "action": {
+                                       "type": "uri",
+                                       "label": "ANIMEMUSIC",
+                                       "uri": "line://app/1602400375-aply3W40"
+                                   }
+                               },
+                               {
+                                   "imageUrl": "https://i.pinimg.com/564x/69/7b/b2/697bb2d73b26abcfa7889d0c297293be.jpg",
+                                   "size": "full",
+                                   "aspectRatio": "2:1",
+                                   "action": {
+                                       "type": "uri",
+                                       "label": "GAMEASW",
+                                       "uri": "line://app/1602868921-rQoYxRGQ"
+                                   }
+                               },
+                               {
+                                   "imageUrl": "https://images2.alphacoders.com/567/thumb-1920-567642.png",
+                                   "size": "full",
+                                   "action": {
+                                       "type": "uri",
+                                       "label": "STICKER",
+                                       "uri": "line://app/1602868921-NZ9qpnbL?type=anim&pkgid=11392&stkid=36043977,15595837,15595841,15595839,15595836,15878342,15595834,36043975,36043976,36043980,36043979,27695302,27695296,27695297,52002763,52002773,52002759,51626508,51626530,51626532,51626531,52114132,52114135,49279749,49279750,49279751,49279752,49279753,49279754,49279755,49279756,49279761,49279762,49279763,49279764,49279765,49279743,49279744,49279745"
+                                   }
+                               },
+                               {
+                                   "imageUrl": "https://media.giphy.com/media/Yc65Sk2Hwkzgk/source.gif",
+                                   "size": "full",
+                                   "action": {
+                                       "type": "uri",
+                                       "label": "BACOT",
+                                       "uri": "line://app/1603138059-LNlpppze?type=text&text=BACOT"
+                                   }
+                               },
+                               {
+                                   "imageUrl": "https://i.pinimg.com/564x/ab/56/3f/ab563f255fe2aaa7bef17d14d02dec50.jpg",
+                                   "size": "full",
+                                   "action": {
+                                       "type": "uri",
+                                       "label": "WALLPAPER",
+                                       "uri": "line://app/1602400375-Ew654rbL"
+                                   }
+                               },
+                               {
+                                   "imageUrl": "https://giphy.com/static/img/giphy_logo_square_social.png",
+                                   "size": "full",
+                                   "action": {
+                                       "type": "uri",
+                                       "label": "GIPHY",
+                                       "uri": "line://app/1602868921-3DaEYB9z"
+                                   }
+                               }
+                           ]
+                       }
+                   }
+                ])
 
          if(txt == 'hak admin dan staff' || txt == 'hak staff dan admin') {
             this._sendMessage(seq, 'Staff Bisa Memakai Command Yang Di Staff Dan All Tetapi Tidak Bisa Memakai Command Yang Di Admin Serta Tidak Bisa Inv Bot Ke Group Mana Pun (Isitilah Nya Kek CreatorGroup Siri Lah Tpi Tidak Bisa Change, Kalo Mao Change Perlu Minta Ke Admin)\n\nKalo Admin Bisa Memakai Command All, Staff, Admin Dan Membawa Bot Kemana Pun Tanpa Limit (Kecuali Situ Limit Inv)\n\n-тєαм αиυ вσт-');
